@@ -504,7 +504,11 @@ header {
 
 .tabs__content {
   width: 100%;
-  position: relative; }
+  position: relative;
+  display: none; }
+
+.tabs__content.active {
+  display: block; }
 
 .tabs__caption {
   width: 100%;
@@ -522,7 +526,8 @@ header {
   margin: 0 0 30px;
   font-size: 30px; }
   .tabs__caption li {
-    margin: 0 50px 0 0; }
+    margin: 0 50px 0 0;
+    cursor: pointer; }
     .tabs__caption li:last-child {
       margin: 0; }
   .tabs__caption .active {
@@ -828,7 +833,8 @@ footer {
   .category-slider .slick-slide {
     margin: 0 30px; }
   .category-slider__nav {
-    padding: 0 15px; }
+    padding: 0 15px;
+    max-width: 1000px; }
   .btn-black-blue {
     font-size: 30px; } }
 

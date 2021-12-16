@@ -463,10 +463,15 @@ header
     margin: 0 auto 32px
     font-size: 45px
 
+
+
 .tabs__content
   width: 100%
   position: relative
+  display: none
 
+.tabs__content.active
+  display: block
 
 .tabs__caption
   width: 100%
@@ -478,6 +483,7 @@ header
   font-size: 30px
   li
     margin: 0 50px 0 0
+    cursor: pointer
     &:last-child
       margin: 0
   .active
